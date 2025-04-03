@@ -22,8 +22,13 @@ function Contact() {
         setIsLoading(true);
         setStatus('');
 
+        // Dynamically select the API URL based on the environment
+        const API_URL = process.env.NODE_ENV === 'production'
+            ? 'https://your-backend-url.vercel.app/api/sendEmail'  // Replace with your deployed backend URL
+            : 'http://localhost:5000/api/sendEmail';  // Local development URL
+
         try {
-            const response = await fetch('http://localhost:5000/api/sendEmail', {
+            const response = await fetch(API_URL, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -53,6 +58,7 @@ function Contact() {
             setIsLoading(false);
         }
     };
+
 
     return (
         <section className="contact-section container py-5" id="contact">

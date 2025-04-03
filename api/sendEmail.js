@@ -4,10 +4,12 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000; // Make sure to use environment port if available
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: 'https://josiahh.vercel.app', // Replace with your frontend domain
+}));
 app.use(bodyParser.json());
 
 // Create a transporter for nodemailer
