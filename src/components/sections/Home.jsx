@@ -1,13 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function Home({ navigateTo }) {
+function Home() {
     const handleDownloadCV = () => {
         alert('CV file not found!');
         console.error('Error downloading CV: File not found');
     };
 
+    const navigate = useNavigate();
     const handleContactClick = () => {
-        navigateTo('contact');
+        navigate('/contact');
     };
 
     return (

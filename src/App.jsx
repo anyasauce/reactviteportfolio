@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import Home from './components/sections/Home';
@@ -7,10 +8,9 @@ import Projects from './components/sections/Projects';
 import Skills from './components/sections/Skills';
 import Contact from './components/sections/Contact';
 import Chatbot from './components/features/Chatbot';
-
+import NotFound from './components/NotFound';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('home');
   const [theme, setTheme] = useState('dark');
 
   const toggleTheme = () => {
@@ -19,29 +19,24 @@ function App() {
     document.documentElement.setAttribute('data-bs-theme', newTheme);
   };
 
-  const navigateTo = (section) => {
-    setActiveSection(section);
-    window.scrollTo(0, 0);
-  };
-
   return (
-    <div className="app">
-      <Header
-        activeSection={activeSection}
-        navigateTo={navigateTo}
-        theme={theme}
-        toggleTheme={toggleTheme}
-      />
-      <main className="container py-4">
-        {activeSection === 'home' && <Home navigateTo={navigateTo} />}
-        {activeSection === 'about' && <About />}
-        {activeSection === 'projects' && <Projects />}
-        {activeSection === 'skills' && <Skills />}
-        {activeSection === 'contact' && <Contact />}
-      </main>
-      <Footer />
-      <Chatbot />
-    </div>
+    <Router>
+      <div className="app">
+        <Header theme={theme} toggleTheme={toggleTheme} />
+        <main className="container py-4">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        <Footer />
+        <Chatbot />
+      </div>
+    </Router>
   );
 }
 
