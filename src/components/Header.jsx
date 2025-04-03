@@ -28,10 +28,8 @@ function Header({ activeSection, navigateTo, theme, toggleTheme }) {
     };
 
     return (
-        <nav
-            className={`navbar navbar-expand-lg navbar-dark ${scrolled ? 'bg-dark bg-opacity-95' : 'bg-dark'} shadow-sm sticky-top transition-all duration-300`}
-            style={{ transition: 'all 0.3s ease' }}
-        >
+        <nav role="navigation" className={`navbar navbar-expand-lg navbar-dark ${scrolled ? 'bg-dark bg-opacity-95' : 'bg-dark'} shadow-sm sticky-top transition-all duration-300`}>
+
             <div className="container">
                 <a
                     className="navbar-brand d-flex align-items-center"
