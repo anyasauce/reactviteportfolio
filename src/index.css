@@ -9,11 +9,29 @@
   --footer-border-light: rgba(0, 0, 0, 0.1);
 }
 
+
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4e54c8;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6a6ff2;
+}
+
 [data-bs-theme="dark"] {
   --bs-body-bg: #121212;
   --bs-body-color: #e0e0e0;
 
-  /* Dark mode specific styles */
   .footer {
     background-color: var(--footer-bg-dark);
     border-top-color: var(--footer-border-dark);
@@ -38,7 +56,6 @@
   --bs-body-bg: #f8f9fa;
   --bs-body-color: #212529;
 
-  /* Light mode specific styles */
   .footer {
     background-color: var(--footer-bg-light);
     border-top-color: var(--footer-border-light);
@@ -52,6 +69,35 @@
     background-color: rgba(0, 0, 0, 0.05) !important;
     border: 1px solid rgba(0, 0, 0, 0.05);
   }
+}
+
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.badge {
+  background-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.icon {
+  background-color: var(--primary-color) !important;
+  width: 50px;
+  font-size: 1.5rem;
 }
 
 body {
@@ -156,7 +202,6 @@ body {
   transform: rotate(30deg);
 }
 
-/* Additional improvements */
 .footer h5 {
   position: relative;
   display: inline-block;
@@ -173,13 +218,30 @@ body {
 }
 
 @media (max-width: 768px) {
+
+  .navbar-nav {
+    margin-top: 15px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 0.75rem;
+  }
+
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .theme-toggler {
+    margin: auto;
+  }
+
+  .hero-section {
+    margin-top: -50px;
+  }
+
   .footer .row>div {
     text-align: center !important;
     margin-bottom: 1.5rem;
-  }
-
-  .hero-section{
-    margin-top: -50px;
   }
 
   .footer .row>div:last-child {

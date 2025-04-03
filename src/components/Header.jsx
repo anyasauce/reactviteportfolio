@@ -28,7 +28,7 @@ function Header({ activeSection, navigateTo, theme, toggleTheme }) {
                         navigateTo('home');
                     }}
                 >
-                    <span className="bg-primary bg-opacity-75 p-2 rounded me-2 d-flex align-items-center justify-content-center">
+                    <span className="icon bg-primary bg-opacity-75 p-2 rounded me-2 d-flex align-items-center justify-content-center">
                         <i className="bi bi-terminal text-white"></i>
                     </span>
                     <span className="fw-bold">Portfolio</span>

@@ -8,35 +8,17 @@ import Skills from './components/Skills';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
-  const [theme, setTheme] = useState('dark'); // Default dark theme
+  const [theme, setTheme] = useState('dark');
 
-  // Handle theme toggling
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
     document.documentElement.setAttribute('data-bs-theme', newTheme);
   };
 
-  // Handle section navigation
   const navigateTo = (section) => {
     setActiveSection(section);
     window.scrollTo(0, 0);
-  };
-
-  // Render active section
-  const renderSection = () => {
-    switch (activeSection) {
-      case 'home':
-        return <Home />;
-      case 'about':
-        return <About />;
-      case 'projects':
-        return <Projects />;
-      case 'skills':
-        return <Skills />;
-      default:
-        return <Home />;
-    }
   };
 
   return (
@@ -48,7 +30,10 @@ function App() {
         toggleTheme={toggleTheme}
       />
       <main className="container py-4">
-        {renderSection()}
+        {activeSection === 'home' && <Home />}
+        {activeSection === 'about' && <About />}
+        {activeSection === 'projects' && <Projects />}
+        {activeSection === 'skills' && <Skills />}
       </main>
       <Footer />
     </div>

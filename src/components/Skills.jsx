@@ -85,7 +85,7 @@ function Skills() {
                             <div className="row g-3">
                                 {tools.map((tool, index) => (
                                     <div className="col-6 col-md-3" key={index}>
-                                        <div className="p-3 rounded bg-dark bg-opacity-50 text-center h-100 hover:bg-opacity-75 transition-colors">
+                                        <div className="skill-item rounded p-3 bg-dark bg-opacity-50 text-center h-100 hover:bg-opacity-75 transition-colors">
                                             <i
                                                 className={`${tool.icon} fs-1 mb-2 d-block`}
                                                 style={{ color: tool.color }}

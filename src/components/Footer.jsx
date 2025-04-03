@@ -34,7 +34,7 @@ function Footer() {
             <div className="container">
                 <div className="row g-4 align-items-center">
                     <div className="col-md-4 text-center text-md-start">
-                        <h5 className="mb-1 text-primary font-bold text-lg">Josiah Danielle Gallenero</h5>
+                        <h5 className="mb-3 text-primary font-bold text-lg">Josiah Danielle Gallenero</h5>
                         <p className="text-muted mb-0 small">Full Stack Web Developer</p>
                     </div>
 
