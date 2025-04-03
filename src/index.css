@@ -179,7 +179,7 @@ body {
   }
 
   .hero-section{
-    margin-top: 50px;
+    margin-top: -50px;
   }
 
   .footer .row>div:last-child {
