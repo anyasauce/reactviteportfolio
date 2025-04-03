@@ -24,7 +24,7 @@ function Contact() {
 
         // Dynamically select the API URL based on the environment
         const API_URL = process.env.NODE_ENV === 'production'
-            ? 'https://your-backend-url.vercel.app/api/sendEmail'  // Replace with your deployed backend URL
+            ? 'https://josiahh.vercel.app/api/sendEmail'  // Correct production API URL
             : 'http://localhost:5000/api/sendEmail';  // Local development URL
 
         try {
