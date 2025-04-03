@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ThemeToggler from './ThemeToggler';
 
 function Header({ activeSection, navigateTo, theme, toggleTheme }) {
     const [scrolled, setScrolled] = useState(false);
+    const navbarCollapseRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -17,8 +18,20 @@ function Header({ activeSection, navigateTo, theme, toggleTheme }) {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const closeNavbarMenu = () => {
+        if (navbarCollapseRef.current) {
+            const bootstrapCollapse = new window.bootstrap.Collapse(navbarCollapseRef.current, {
+                toggle: false,
+            });
+            bootstrapCollapse.hide();
+        }
+    };
+
     return (
-        <nav className={`navbar navbar-expand-lg navbar-dark ${scrolled ? 'bg-dark bg-opacity-95' : 'bg-dark'} shadow-sm sticky-top transition-all duration-300`} style={{ transition: 'all 0.3s ease' }}>
+        <nav
+            className={`navbar navbar-expand-lg navbar-dark ${scrolled ? 'bg-dark bg-opacity-95' : 'bg-dark'} shadow-sm sticky-top transition-all duration-300`}
+            style={{ transition: 'all 0.3s ease' }}
+        >
             <div className="container">
                 <a
                     className="navbar-brand d-flex align-items-center"
@@ -34,11 +47,19 @@ function Header({ activeSection, navigateTo, theme, toggleTheme }) {
                     <span className="fw-bold">Portfolio</span>
                 </a>
 
-                <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button
+                    className="navbar-toggler border-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="collapse navbar-collapse" id="navbarNav">
+                <div className="collapse navbar-collapse" id="navbarNav" ref={navbarCollapseRef}>
                     <ul className="navbar-nav mx-auto">
                         {[
                             { id: 'home', label: 'Home', icon: 'bi-house' },
@@ -53,6 +74,7 @@ function Header({ activeSection, navigateTo, theme, toggleTheme }) {
                                     onClick={(e) => {
                                         e.preventDefault();
                                         navigateTo(item.id);
+                                        closeNavbarMenu();
                                     }}
                                 >
                                     <i className={`bi ${item.icon} me-1`}></i> {item.label}
