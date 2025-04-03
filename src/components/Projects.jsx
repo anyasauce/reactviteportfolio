@@ -3,7 +3,38 @@ import React from 'react';
 function Projects() {
     const projects = [
         {
-            id: 1,
+            title: "Boarding House Management System",
+            description: "A system to manage tenants, payments, and room availability efficiently.",
+            technologies: ["Laravel", "Bootstrap 5", "jQuery", "JavaScript", "CSS"],
+            image: "https://via.placeholder.com/600x400",
+            github: "#",
+            demo: "#"
+        },
+        {
+            title: "The Daily Grind E-Commerce Mini Capstone System",
+            description: "An e-commerce platform for selling products and managing transactions.",
+            technologies: ["PHP", "Bootstrap 5", "JavaScript", "HTML", "CSS"],
+            image: "https://via.placeholder.com/600x400",
+            github: "#",
+            demo: "#"
+        },
+        {
+            title: "Hotel Reservation System",
+            description: "A system for booking and managing hotel reservations online.",
+            technologies: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "PHP"],
+            image: "https://via.placeholder.com/600x400",
+            github: "#",
+            demo: "#"
+        },
+        {
+            title: "Sarap Express (Frontend Only Design)",
+            description: "A modern and interactive frontend design for a food delivery service.",
+            technologies: ["React.js", "Bootstrap 5", "AOS", "CSS"],
+            image: "https://via.placeholder.com/600x400",
+            github: "#",
+            demo: "#"
+        },
+        {
             title: "ITSD ID Reservation System",
             description: "A system designed to efficiently handle and manage ID reservations for users.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
@@ -12,7 +43,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 2,
             title: "Rizal Ibarra Profiling System",
             description: "An efficient profiling system for Rizal's data that centralizes and manages personal information.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
@@ -21,7 +51,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 3,
             title: "Roblox Jailbreak System",
             description: "A system for managing Roblox Jailbreak players' data.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
@@ -30,7 +59,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 4,
             title: "Attendance System",
             description: "Tracks and manages attendance records efficiently.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
@@ -39,7 +67,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 5,
             title: "Attendance Form System",
             description: "Simplifies attendance submission through an online form.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
@@ -48,7 +75,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 6,
             title: "Phinma UI Student Management System",
             description: "Manages student records and information for efficiency.",
             technologies: ["Python Flask", "MySQL", "Bootstrap", "JavaScript", "CSS"],
@@ -57,7 +83,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 7,
             title: "Coffee Shop System",
             description: "Handles orders and inventory for coffee shop operations.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
@@ -66,7 +91,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 8,
             title: "Water Refilling System",
             description: "Efficiently manages water refilling service requests.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
@@ -75,7 +99,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 9,
             title: "Feedback Form System",
             description: "Collects and organizes user feedback efficiently.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
@@ -84,7 +107,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 10,
             title: "ID Generator System",
             description: "Generates unique IDs for various applications.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
@@ -93,7 +115,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 11,
             title: "RFID System",
             description: "Manages RFID-based attendance and tracking system.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
@@ -102,7 +123,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 12,
             title: "E-Commerce System",
             description: "Facilitates online shopping and transaction management.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
@@ -111,7 +131,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 13,
             title: "SDMS Student Management System",
             description: "Comprehensive system for managing student information.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
@@ -120,7 +139,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 14,
             title: "Coffee Shop Web Design",
             description: "Frontend design for a coffee shop website.",
             technologies: ["HTML", "CSS"],
@@ -129,7 +147,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 15,
             title: "Good Student Web Design",
             description: "Frontend design showcasing student achievements.",
             technologies: ["HTML", "CSS"],
@@ -138,7 +155,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 16,
             title: "IOS Calculator Web Design",
             description: "Functional calculator with iOS-style design.",
             technologies: ["HTML", "JavaScript", "CSS"],
@@ -147,7 +163,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 17,
             title: "E-Commerce Web Design",
             description: "Frontend design for an e-commerce platform.",
             technologies: ["HTML", "Bootstrap", "JavaScript", "CSS"],
@@ -156,7 +171,6 @@ function Projects() {
             demo: "#"
         },
         {
-            id: 18,
             title: "Giveaway System",
             description: "System for managing giveaway entries and winners.",
             technologies: ["HTML", "PHP Vanilla", "JavaScript", "CSS"],
