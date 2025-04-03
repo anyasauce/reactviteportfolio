@@ -32,10 +32,10 @@ app.post('/api/sendEmail', (req, res) => {
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            console.error('Error sending email:', error);  // Log the error for debugging
+            console.error('Error sending email:', error);
             return res.status(500).json({ message: 'Failed to send message', error: error.message });
         }
-        console.log('Email sent successfully:', info);  // Log the successful email sending
+        console.log('Email sent successfully:', info);
         return res.status(200).json({ message: 'Message sent successfully!' });
     });
 });
