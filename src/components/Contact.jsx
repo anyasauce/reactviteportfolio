@@ -23,7 +23,7 @@ function Contact() {
         setStatus('');
 
         try {
-            const response = await fetch('/api/sendEmail', { // Make sure this points to the relative path
+            const response = await fetch('http://localhost:5000/api/sendEmail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -53,7 +53,6 @@ function Contact() {
             setIsLoading(false);
         }
     };
-
 
     return (
         <section className="contact-section container py-5" id="contact">
