@@ -6,6 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import Chatbot from './components/Chatbot';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -38,6 +39,7 @@ function App() {
         {activeSection === 'contact' && <Contact />}
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 }

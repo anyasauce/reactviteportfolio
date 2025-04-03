@@ -22,10 +22,9 @@ function Contact() {
         setIsLoading(true);
         setStatus('');
 
-        // Dynamically select the API URL based on the environment
         const API_URL = process.env.NODE_ENV === 'production'
-            ? 'https://josiahh.vercel.app/api/sendEmail'  // Correct production API URL
-            : 'http://localhost:5000/api/sendEmail';  // Local development URL
+            ? 'https://josiahh.vercel.app/api/sendEmail'
+            : 'http://localhost:5000/api/sendEmail';
 
         try {
             const response = await fetch(API_URL, {
