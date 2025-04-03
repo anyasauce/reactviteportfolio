@@ -1,4 +1,28 @@
 import React from 'react';
+import BoardingHouseImage from '../assets/projects_images/boardinghouse.png';
+import CodeWebTechImage from '../assets/projects_images/codewebtech.png';
+import ReservationImage from '../assets/projects_images/reservation.png';
+import WebImage from '../assets/projects_images/web.png';
+import IbarraImage from '../assets/projects_images/ibarra.png';
+import JbImage from '../assets/projects_images/jb.png';
+import AttendanceImage from '../assets/projects_images/attendance.png';
+import AttendanceFormImage from '../assets/projects_images/attendanceform.png';
+import PhusmsImage from '../assets/projects_images/phusms.png';
+import CoffeeImage from '../assets/projects_images/coffee.png';
+import WaterImage from '../assets/projects_images/water.png';
+import FeedbackImage from '../assets/projects_images/feedback.png';
+import IdImage from '../assets/projects_images/id.png';
+import RfidImage from '../assets/projects_images/rfid.png';
+import SdmsImage from '../assets/projects_images/sdms.png';
+import CalculatorImage from '../assets/projects_images/calculator.png';
+import Rizal from '../assets/projects_images/rizal.png';
+import Hotel from '../assets/projects_images/hotel.png';
+import SarapExpress from '../assets/projects_images/sarapexpress.png';
+import TheDailyGrind from '../assets/projects_images/thedailygrind.png';
+import CodeWeb from '../assets/projects_images/codeweb.png';
+import Giveaway from '../assets/projects_images/giveaway.png';
+import CoffeeWeb from '../assets/projects_images/design.png';
+
 
 function Projects() {
     const projects = [
@@ -6,7 +30,7 @@ function Projects() {
             title: "Boarding House Management System",
             description: "A system to manage tenants, payments, and room availability efficiently.",
             technologies: ["Laravel", "Bootstrap 5", "jQuery", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: BoardingHouseImage,
             github: "#",
             demo: "#"
         },
@@ -14,7 +38,7 @@ function Projects() {
             title: "The Daily Grind E-Commerce Mini Capstone System",
             description: "An e-commerce platform for selling products and managing transactions.",
             technologies: ["PHP", "Bootstrap 5", "JavaScript", "HTML", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: TheDailyGrind,
             github: "#",
             demo: "#"
         },
@@ -22,7 +46,7 @@ function Projects() {
             title: "Hotel Reservation System",
             description: "A system for booking and managing hotel reservations online.",
             technologies: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "PHP"],
-            image: "https://via.placeholder.com/600x400",
+            image: Hotel,
             github: "#",
             demo: "#"
         },
@@ -30,7 +54,7 @@ function Projects() {
             title: "Sarap Express (Frontend Only Design)",
             description: "A modern and interactive frontend design for a food delivery service.",
             technologies: ["React.js", "Bootstrap 5", "AOS", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: SarapExpress,
             github: "#",
             demo: "#"
         },
@@ -38,7 +62,7 @@ function Projects() {
             title: "ITSD ID Reservation System",
             description: "A system designed to efficiently handle and manage ID reservations for users.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: ReservationImage,
             github: "#",
             demo: "#"
         },
@@ -46,7 +70,15 @@ function Projects() {
             title: "Rizal Ibarra Profiling System",
             description: "An efficient profiling system for Rizal's data that centralizes and manages personal information.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: IbarraImage,
+            github: "#",
+            demo: "#"
+        },
+        {
+            title: "Rizal Ibarra Profiling System",
+            description: "An efficient profiling system for Rizal's data that centralizes and manages personal information.",
+            technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
+            image: Rizal,
             github: "#",
             demo: "#"
         },
@@ -54,7 +86,7 @@ function Projects() {
             title: "Roblox Jailbreak System",
             description: "A system for managing Roblox Jailbreak players' data.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: JbImage,
             github: "#",
             demo: "#"
         },
@@ -62,7 +94,7 @@ function Projects() {
             title: "Attendance System",
             description: "Tracks and manages attendance records efficiently.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: AttendanceImage,
             github: "#",
             demo: "#"
         },
@@ -70,7 +102,7 @@ function Projects() {
             title: "Attendance Form System",
             description: "Simplifies attendance submission through an online form.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: AttendanceFormImage,
             github: "#",
             demo: "#"
         },
@@ -78,7 +110,7 @@ function Projects() {
             title: "Phinma UI Student Management System",
             description: "Manages student records and information for efficiency.",
             technologies: ["Python Flask", "MySQL", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: PhusmsImage,
             github: "#",
             demo: "#"
         },
@@ -86,7 +118,7 @@ function Projects() {
             title: "Coffee Shop System",
             description: "Handles orders and inventory for coffee shop operations.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: CoffeeImage,
             github: "#",
             demo: "#"
         },
@@ -94,7 +126,7 @@ function Projects() {
             title: "Water Refilling System",
             description: "Efficiently manages water refilling service requests.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: WaterImage,
             github: "#",
             demo: "#"
         },
@@ -102,7 +134,7 @@ function Projects() {
             title: "Feedback Form System",
             description: "Collects and organizes user feedback efficiently.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: FeedbackImage,
             github: "#",
             demo: "#"
         },
@@ -110,7 +142,7 @@ function Projects() {
             title: "ID Generator System",
             description: "Generates unique IDs for various applications.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: IdImage,
             github: "#",
             demo: "#"
         },
@@ -118,7 +150,7 @@ function Projects() {
             title: "RFID System",
             description: "Manages RFID-based attendance and tracking system.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: RfidImage,
             github: "#",
             demo: "#"
         },
@@ -126,7 +158,7 @@ function Projects() {
             title: "E-Commerce System",
             description: "Facilitates online shopping and transaction management.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: CodeWeb,
             github: "#",
             demo: "#"
         },
@@ -134,7 +166,7 @@ function Projects() {
             title: "SDMS Student Management System",
             description: "Comprehensive system for managing student information.",
             technologies: ["PHP Vanilla", "MySQL", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: SdmsImage,
             github: "#",
             demo: "#"
         },
@@ -142,7 +174,7 @@ function Projects() {
             title: "Coffee Shop Web Design",
             description: "Frontend design for a coffee shop website.",
             technologies: ["HTML", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: CoffeeWeb,
             github: "#",
             demo: "#"
         },
@@ -150,7 +182,7 @@ function Projects() {
             title: "Good Student Web Design",
             description: "Frontend design showcasing student achievements.",
             technologies: ["HTML", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: WebImage,
             github: "#",
             demo: "#"
         },
@@ -158,7 +190,7 @@ function Projects() {
             title: "IOS Calculator Web Design",
             description: "Functional calculator with iOS-style design.",
             technologies: ["HTML", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: CalculatorImage,
             github: "#",
             demo: "#"
         },
@@ -166,7 +198,7 @@ function Projects() {
             title: "E-Commerce Web Design",
             description: "Frontend design for an e-commerce platform.",
             technologies: ["HTML", "Bootstrap", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: CodeWebTechImage,
             github: "#",
             demo: "#"
         },
@@ -174,7 +206,7 @@ function Projects() {
             title: "Giveaway System",
             description: "System for managing giveaway entries and winners.",
             technologies: ["HTML", "PHP Vanilla", "JavaScript", "CSS"],
-            image: "https://via.placeholder.com/600x400",
+            image: Giveaway,
             github: "#",
             demo: "#"
         }
