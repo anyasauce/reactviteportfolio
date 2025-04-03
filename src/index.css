@@ -178,6 +178,10 @@ body {
     margin-bottom: 1.5rem;
   }
 
+  .hero-section{
+    margin-top: 50px;
+  }
+
   .footer .row>div:last-child {
     margin-bottom: 0;
   }
