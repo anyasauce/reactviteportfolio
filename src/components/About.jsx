@@ -67,7 +67,7 @@ function About() {
                                         <p className="mb-0">2024</p>
                                     </div>
                                 </div>
-
+                                
                             </div>
                         </div>
                     </div>

@@ -1,18 +1,13 @@
 import React from 'react';
 
-function Home() {
+function Home({ navigateTo }) {
     const handleDownloadCV = () => {
         alert('CV file not found!');
         console.error('Error downloading CV: File not found');
     };
 
     const handleContactClick = () => {
-        const contactSection = document.getElementById('contact');
-        if (contactSection) {
-            contactSection.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            alert('Contact section not found!');
-        }
+        navigateTo('contact');
     };
 
     return (
@@ -29,6 +24,11 @@ function Home() {
                         <button className="btn btn-outline-primary btn-lg" onClick={handleContactClick}>
                             Contact Me <i className="bi bi-envelope ms-2"></i>
                         </button>
+                    </div>
+                    <div className="mt-3">
+                        <a href="https://www.buymeacoffee.com/josiahdanip">
+                            <img src="https://img.buymeacoffee.com/button-api/?text=Support me on BuyMeCoffee&emoji=☕&slug=josiahdanip&button_colour=6c63ff&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00" alt="Buy Me a Coffee" />
+                        </a>
                     </div>
                 </div>
             </div>

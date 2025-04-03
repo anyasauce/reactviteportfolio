@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -30,10 +31,11 @@ function App() {
         toggleTheme={toggleTheme}
       />
       <main className="container py-4">
-        {activeSection === 'home' && <Home />}
+        {activeSection === 'home' && <Home navigateTo={navigateTo} />}
         {activeSection === 'about' && <About />}
         {activeSection === 'projects' && <Projects />}
         {activeSection === 'skills' && <Skills />}
+        {activeSection === 'contact' && <Contact />}
       </main>
       <Footer />
     </div>

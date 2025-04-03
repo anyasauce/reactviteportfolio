@@ -11,6 +11,9 @@
     "clean-install": "rm -rf node_modules package-lock.json && npm install"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
+    "cors": "^2.8.5",
+    "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "reactviteportfolio": "file:"
