@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import About from './components/About';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Chatbot from './components/Chatbot';
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
+import Home from './components/sections/Home';
+import About from './components/sections/About';
+import Projects from './components/sections/Projects';
+import Skills from './components/sections/Skills';
+import Contact from './components/sections/Contact';
+import Chatbot from './components/features/Chatbot';
+
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
