@@ -32,7 +32,7 @@ function Projects() {
             technologies: ["Laravel", "Bootstrap 5", "jQuery", "JavaScript", "CSS"],
             image: BoardingHouseImage,
             github: "#",
-            demo: "#"
+            demo: "https://bhms.laravel.cloud/"
         },
         {
             title: "The Daily Grind E-Commerce Mini Capstone System",
@@ -212,6 +212,12 @@ function Projects() {
         }
     ];
 
+    const handleLinkClick = (linkType, link) => {
+        if (link === "#") {
+            alert(`No ${linkType} link provided.`);
+        }
+    };
+
     return (
         <section className="py-5">
             <h2 className="section-title">My Projects</h2>
@@ -233,10 +239,28 @@ function Projects() {
                             </div>
                             <div className="card-footer bg-transparent border-0">
                                 <div className="d-flex gap-2">
-                                    <a href={project.github} className="btn btn-sm btn-outline-primary">
+                                    <a
+                                        href={project.github}
+                                        className="btn btn-sm btn-outline-primary"
+                                        onClick={(e) => {
+                                            if (project.github === "#") {
+                                                e.preventDefault();
+                                                handleLinkClick("GitHub", project.github);
+                                            }
+                                        }}
+                                    >
                                         <i className="bi bi-github me-1"></i> Code
                                     </a>
-                                    <a href={project.demo} className="btn btn-sm btn-primary">
+                                    <a
+                                        href={project.demo}
+                                        className="btn btn-sm btn-primary"
+                                        onClick={(e) => {
+                                            if (project.demo === "#") {
+                                                e.preventDefault();
+                                                handleLinkClick("Demo", project.demo);
+                                            }
+                                        }}
+                                    >
                                         <i className="bi bi-eye me-1"></i> Live Demo
                                     </a>
                                 </div>

@@ -1,10 +1,31 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect, useRef } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import ThemeToggler from './ThemeToggler';
+import '../styles/Header.css';
+
 
 function Header({ theme, toggleTheme }) {
+    const location = useLocation();
+    const navbarCollapseRef = useRef(null);
+    const navbarTogglerRef = useRef(null);
+
+    useEffect(() => {
+        function closeNavbar() {
+            if (window.innerWidth < 992) {
+                const collapse = navbarCollapseRef.current;
+                const toggler = navbarTogglerRef.current;
+
+                if (collapse && toggler && collapse.classList.contains('show')) {
+                    toggler.click();
+                }
+            }
+        }
+
+        closeNavbar();
+    }, [location]);
+
     return (
-        <nav role="navigation" className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top transition-all duration-300">
+        <nav role="navigation" className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
             <div className="container">
                 <NavLink className="navbar-brand d-flex align-items-center" to="/">
                     <span className="icon bg-primary bg-opacity-75 p-2 rounded me-2 d-flex align-items-center justify-content-center">
@@ -14,6 +35,7 @@ function Header({ theme, toggleTheme }) {
                 </NavLink>
 
                 <button
+                    ref={navbarTogglerRef}
                     className="navbar-toggler border-0"
                     type="button"
                     data-bs-toggle="collapse"
@@ -25,7 +47,11 @@ function Header({ theme, toggleTheme }) {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="collapse navbar-collapse" id="navbarNav">
+                <div
+                    ref={navbarCollapseRef}
+                    className="collapse navbar-collapse"
+                    id="navbarNav"
+                >
                     <ul className="navbar-nav mx-auto">
                         {[
                             { id: '/', label: 'Home', icon: 'bi-house' },

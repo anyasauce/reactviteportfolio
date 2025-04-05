@@ -13,12 +13,13 @@ function Skills() {
 
     const learningTechStack = [
         { name: "Laravel", icon: "fa-brands fa-laravel", color: "#FF2D20" },
-        { name: "React.js", icon: "fa-brands fa-react", color: "#61DAFB" },
+        { name: "React.js + Vite", icon: "fa-brands fa-react", color: "#61DAFB", subIcon: "fa-solid fa-bolt", subColor: "#FFD62E" },
         { name: "API", icon: "fa-solid fa-code", color: "#E6E3E3FF" },
         { name: "Tailwind.css", icon: "fa-solid fa-wind", color: "#06B6D4" },
-        { name: "Vite", icon: "fa-solid fa-bolt", color: "#FFD62E" },
         { name: "MongoDB", icon: "fa-solid fa-database", color: "#47A248" },
-        { name: "PDO", icon: "fa-solid fa-shield-halved", color: "#59666C" }
+        { name: "PDO", icon: "fa-solid fa-shield-halved", color: "#59666C" },
+        { name: "Node.js", icon: "fa-brands fa-node", color: "#68A063" },
+        { name: "Express.js", icon: "fa-solid fa-server", color: "#000000" }
     ];
 
     const tools = [

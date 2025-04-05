@@ -2,13 +2,13 @@ import React from 'react';
 
 function ThemeToggler({ theme, toggleTheme }) {
     return (
-        <div className="theme-toggler ms-2" onClick={toggleTheme}>
+        <button className="theme-toggler ms-2 border-0 bg-transparent" onClick={toggleTheme}>
             {theme === 'dark' ? (
                 <i className="bi bi-sun-fill text-warning"></i>
             ) : (
                 <i className="bi bi-moon-fill text-primary"></i>
             )}
-        </div>
+        </button>
     );
 }
 

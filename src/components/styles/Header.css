@@ -1,0 +1,20 @@
+.navbar-collapse {
+    transition: height 0.4s ease !important;
+}
+
+.collapsing {
+    transition: height 0.4s ease !important;
+}
+
+.nav-link:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand:hover .icon {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.navbar * {
+    transition: all 0.3s ease;
+}
