@@ -52,6 +52,7 @@ function About() {
                                         <p className="mb-0">5+</p>
                                     </div>
                                 </div>
+
                                 <div className="col-6">
                                     <div className="p-3 bg-opacity-50 rounded text-center">
                                         <i className="fa-solid fa-diagram-project fs-3 text-primary mb-2"></i>
@@ -60,14 +61,13 @@ function About() {
                                     </div>
                                 </div>
 
-                                <div className="col-6">
+                                <div className="col-12 d-flex justify-content-center">
                                     <div className="p-3 bg-opacity-50 rounded text-center">
                                         <i className="fa-solid fa-calendar-check fs-1 text-primary mb-2"></i>
                                         <h5>Freelance Since</h5>
                                         <p className="mb-0">2024</p>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
