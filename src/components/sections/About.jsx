@@ -46,14 +46,14 @@ function About() {
                             <h3 className="card-title mb-4 mt-5">Freelance Stats</h3>
                             <div className="row g-3">
                                 <div className="col-6">
-                                    <div className="p-3 bg-dark bg-opacity-50 rounded text-center">
+                                    <div className="p-3 bg-opacity-50 rounded text-center">
                                         <i className="fa-solid fa-users fs-3 text-primary mb-2"></i>
                                         <h5 className="mb-1">Statisfied Clients</h5>
                                         <p className="mb-0">5+</p>
                                     </div>
                                 </div>
                                 <div className="col-6">
-                                    <div className="p-3 bg-dark bg-opacity-50 rounded text-center">
+                                    <div className="p-3 bg-opacity-50 rounded text-center">
                                         <i className="fa-solid fa-diagram-project fs-3 text-primary mb-2"></i>
                                         <h5 className="mb-1">Projects</h5>
                                         <p className="mb-0">10+</p>
@@ -61,7 +61,7 @@ function About() {
                                 </div>
 
                                 <div className="col-6">
-                                    <div className="p-3 bg-dark bg-opacity-50 rounded text-center">
+                                    <div className="p-3 bg-opacity-50 rounded text-center">
                                         <i className="fa-solid fa-calendar-check fs-1 text-primary mb-2"></i>
                                         <h5>Freelance Since</h5>
                                         <p className="mb-0">2024</p>
