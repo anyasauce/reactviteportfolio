@@ -1,4 +1,5 @@
-import React from 'react';
+import { useState } from 'react';
+import bootstrap from 'bootstrap/dist/js/bootstrap.bundle';
 import BoardingHouseImage from '../../assets/projects_images/boardinghouse.png';
 import CodeWebTechImage from '../../assets/projects_images/codewebtech.png';
 import ReservationImage from '../../assets/projects_images/reservation.png';
@@ -22,10 +23,27 @@ import TheDailyGrind from '../../assets/projects_images/thedailygrind.png';
 import CodeWeb from '../../assets/projects_images/codeweb.png';
 import Giveaway from '../../assets/projects_images/giveaway.png';
 import CoffeeWeb from '../../assets/projects_images/design.png';
-
+import Bmi from '../../assets/projects_images/bmi.png';
+import Color from '../../assets/projects_images/colorpalette.png';
+import Login from '../../assets/projects_images/modernlogin.png';
+import Starter from '../../assets/projects_images/starter.png';
+import Template from '../../assets/projects_images/template.png';
+import OldPortfolio from '../../assets/projects_images/oldportfolio.png';
+import CountDown from '../../assets/projects_images/countdown.png';
+import PhotoBooth from '../../assets/projects_images/photobooth.png';
+import Bday from '../../assets/projects_images/bday.png';
+import smsportal from '../../assets/projects_images/smsportal.png';
 
 function Projects() {
     const projects = [
+        {
+            title: "Student Portal with E-Wallet",
+            description: "An all-in-one platform for students to manage their accounts, make secure e-wallet transactions, and track transactions availability in real-time.",
+            technologies: ["Laravel", "Tailwind CSS", "jQuery", "JavaScript"],
+            image: smsportal,
+            github: "#",
+            demo: ""
+        },
         {
             title: "Boarding House Management System",
             description: "A system to manage tenants, payments, and room availability efficiently.",
@@ -41,6 +59,78 @@ function Projects() {
             image: TheDailyGrind,
             github: "#",
             demo: "#"
+        },
+        {
+            title: "Photo Booth",
+            description: "A countdown timer that dynamically displays the time remaining until the New Year.",
+            technologies: ["React.js", "Bootstrap 5", "JavaScript", "CSS"],
+            image: PhotoBooth,
+            github: "#",
+            demo: "https://snapspotphotobooth.vercel.app/"
+        },
+        {
+            title: "Bday Card",
+            description: "A countdown timer that dynamically displays the time remaining until the New Year.",
+            technologies: ["HTML", "Bootstrap 5", "JavaScript", "CSS"],
+            image: Bday,
+            github: "#",
+            demo: "https://kynes19th.vercel.app/"
+        },
+        {
+            title: "New Year Countdown",
+            description: "A countdown timer that dynamically displays the time remaining until the New Year.",
+            technologies: ["React.js", "Bootstrap 5", "JavaScript", "CSS"],
+            image: CountDown,
+            github: "#",
+            demo: "https://countdown-react-app-one.vercel.app/"
+        },
+        {
+            title: "BMI Calculator",
+            description: "A simple tool to calculate Body Mass Index based on user height and weight inputs.",
+            technologies: ["HTML", "Bootstrap 5", "JavaScript", "CSS"],
+            image: Bmi,
+            github: "#",
+            demo: "https://bmicalculator-ebon.vercel.app"
+        },
+        {
+            title: "Color Palette Extractor",
+            description: "An app that extracts a color palette from uploaded images to help with design and inspiration.",
+            technologies: ["React.JS", "Bootstrap 5", "JavaScript", "CSS"],
+            image: Color,
+            github: "#",
+            demo: "https://nightshadepalette.vercel.app/"
+        },
+        {
+            title: "Modern Login Page",
+            description: "An app that extracts a color palette from uploaded images to help with design and inspiration.",
+            technologies: ["HTML", "Bootstrap 5", "JavaScript", "CSS", "AOS", "SweetALert2"],
+            image: Login,
+            github: "#",
+            demo: "https://modernauthentication.vercel.app/"
+        },
+        {
+            title: "Front End Starter Template",
+            description: "A responsive and reusable front-end starter template with modern UI components and animations.",
+            technologies: ["HTML", "Bootstrap 5", "JavaScript", "CSS", "AOS", "SweetALert2"],
+            image: Starter,
+            github: "#",
+            demo: "https://josiahstarterkit.vercel.app/"
+        },
+        {
+            title: "Old Portfolio",
+            description: "A responsive and reusable front-end starter template with modern UI components and animations.",
+            technologies: ["HTML", "Bootstrap 5", "JavaScript", "CSS", "AOS", "SweetALert2"],
+            image: OldPortfolio,
+            github: "#",
+            demo: "https://codewithjosh.vercel.app/"
+        },
+        {
+            title: "Portfolio Free Template",
+            description: "A responsive and reusable front-end starter template with modern UI components and animations.",
+            technologies: ["HTML", "Bootstrap 5", "JavaScript", "CSS", "AOS", "SweetALert2"],
+            image: Template,
+            github: "#",
+            demo: "https://flexdash-codewithjosh.vercel.app/"
         },
         {
             title: "Hotel Reservation System",
@@ -218,6 +308,16 @@ function Projects() {
         }
     };
 
+    const [selectedImage, setSelectedImage] = useState('');
+    const [selectedTitle, setSelectedTitle] = useState('');
+
+    const openModal = (img, title) => {
+        setSelectedImage(img);
+        setSelectedTitle(title);
+        const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+        modal.show();
+    };
+
     return (
         <section className="py-5">
             <h2 className="section-title">My Projects</h2>
@@ -227,7 +327,13 @@ function Projects() {
                 {projects.map(project => (
                     <div className="col-md-6" key={project.id}>
                         <div className="card project-card h-100 border-0 bg-dark bg-opacity-25">
-                            <img src={project.image} className="card-img-top" alt={project.title} />
+                            <img
+                                src={project.image}
+                                className="card-img-top"
+                                alt={project.title}
+                                style={{ cursor: 'pointer' }}
+                                onClick={() => openModal(project.image, project.title)}
+                            />
                             <div className="card-body">
                                 <h4 className="card-title">{project.title}</h4>
                                 <p className="card-text">{project.description}</p>
@@ -268,6 +374,20 @@ function Projects() {
                         </div>
                     </div>
                 ))}
+            </div>
+
+            <div className="modal fade" id="imageModal" tabIndex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-xl">
+                    <div className="modal-content bg-dark text-white">
+                        <div className="modal-header border-0">
+                            <h5 className="modal-title" id="imageModalLabel">{selectedTitle}</h5>
+                            <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body text-center">
+                            <img src={selectedImage} alt="Preview" className="img-fluid rounded" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );

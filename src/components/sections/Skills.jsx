@@ -2,32 +2,107 @@ import React from 'react';
 
 function Skills() {
     const techStack = [
-        { name: "HTML", icon: "fa-brands fa-html5", color: "#E34F26" },
-        { name: "CSS", icon: "fa-brands fa-css3-alt", color: "#1572B6" },
-        { name: "JavaScript", icon: "fa-brands fa-js", color: "#F7DF1E" },
-        { name: "Bootstrap 5", icon: "fa-brands fa-bootstrap", color: "#7952B3" },
-        { name: "PHP", icon: "fa-brands fa-php", color: "#777BB4" },
-        { name: "Python Flask", icon: "fa-brands fa-python", color: "#3776AB" },
-        { name: "MySQL", icon: "fa-solid fa-database", color: "#4479A1" }
+        {
+            name: "HTML",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+            color: "#E34F26"
+        },
+        {
+            name: "CSS",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+            color: "#1572B6"
+        },
+        {
+            name: "JavaScript",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+            color: "#F7DF1E"
+        },
+        {
+            name: "Bootstrap",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+            color: "#7952B3"
+        },
+        {
+            name: "PHP",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+            color: "#777BB4"
+        },
+        {
+            name: "Python",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+            color: "#3776AB"
+        },
+        {
+            name: "MySQL",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+            color: "#4479A1"
+        }
     ];
 
     const learningTechStack = [
-        { name: "Laravel", icon: "fa-brands fa-laravel", color: "#FF2D20" },
-        { name: "React.js + Vite", icon: "fa-brands fa-react", color: "#61DAFB", subIcon: "fa-solid fa-bolt", subColor: "#FFD62E" },
-        { name: "API", icon: "fa-solid fa-code", color: "#E6E3E3FF" },
-        { name: "Tailwind.css", icon: "fa-solid fa-wind", color: "#06B6D4" },
-        { name: "MongoDB", icon: "fa-solid fa-database", color: "#47A248" },
-        { name: "PDO", icon: "fa-solid fa-shield-halved", color: "#59666C" },
-        { name: "Node.js", icon: "fa-brands fa-node", color: "#68A063" },
-        { name: "Express.js", icon: "fa-solid fa-server", color: "#000000" }
+        {
+            name: "Laravel",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
+            color: "#FF2D20"
+        },
+        {
+            name: "React",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+            color: "#61DAFB"
+        },
+        {
+            name: "API",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+            color: "#339933"
+        },
+        {
+            name: "Tailwind CSS",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",  // Fixed typo in URL (plains -> plain)
+            color: "#06B6D4"
+        },
+        {
+            name: "MongoDB",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+            color: "#47A248"
+        },
+        {
+            name: "Node.js",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+            color: "#68A063"
+        },
+        {
+            name: "Express",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+            color: "#000000"
+        }
     ];
 
     const tools = [
-        { name: "VS Code", icon: "fa-solid fa-code", color: "#007ACC" },
-        { name: "Git", icon: "fa-brands fa-git-alt", color: "#F05032" },
-        { name: "GitHub", icon: "fa-brands fa-github", color: "#E6E3E3FF" },
-        { name: "Vercel", icon: "fa-solid fa-cloud-arrow-up", color: "#E6E3E3FF" },
-        { name: "Canva", icon: "fa-solid fa-palette", color: "#00C4CC" }
+        {
+            name: "VS Code",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+            color: "#007ACC"
+        },
+        {
+            name: "Git",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+            color: "#F05032"
+        },
+        {
+            name: "GitHub",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+            color: "#181717"
+        },
+        {
+            name: "Vercel",
+            icon: "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png",
+            color: "#000000"
+        },
+        {
+            name: "Canva",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg",
+            color: "#00C4CC"
+        }
     ];
 
     return (
@@ -43,10 +118,12 @@ function Skills() {
                                 {techStack.map((skill, index) => (
                                     <div className="col-md-6" key={index}>
                                         <div className="skill-item rounded d-flex align-items-center p-3 hover:bg-dark hover:bg-opacity-50 transition-colors">
-                                            <i
-                                                className={`${skill.icon} me-3 fs-4`}
-                                                style={{ color: skill.color }}
-                                            ></i>
+                                            <img
+                                                src={skill.icon}
+                                                alt={skill.name}
+                                                className="me-3"
+                                                style={{ width: "24px", height: "24px", color: skill.color }}
+                                            />
                                             <span>{skill.name}</span>
                                         </div>
                                     </div>
@@ -64,10 +141,12 @@ function Skills() {
                                 {learningTechStack.map((skill, index) => (
                                     <div className="col-md-6" key={index}>
                                         <div className="skill-item rounded d-flex align-items-center p-3 hover:bg-dark hover:bg-opacity-50 transition-colors">
-                                            <i
-                                                className={`${skill.icon} me-3 fs-4`}
-                                                style={{ color: skill.color }}
-                                            ></i>
+                                            <img
+                                                src={skill.icon}
+                                                alt={skill.name}
+                                                className="me-3"
+                                                style={{ width: "24px", height: "24px", color: skill.color }}
+                                            />
                                             <span>{skill.name}</span>
                                         </div>
                                     </div>
@@ -87,10 +166,12 @@ function Skills() {
                                 {tools.map((tool, index) => (
                                     <div className="col-6 col-md-3" key={index}>
                                         <div className="skill-item rounded p-3 bg-dark bg-opacity-50 text-center h-100 hover:bg-opacity-75 transition-colors">
-                                            <i
-                                                className={`${tool.icon} fs-1 mb-2 d-block`}
-                                                style={{ color: tool.color }}
-                                            ></i>
+                                            <img
+                                                src={tool.icon}
+                                                alt={tool.name}
+                                                className="mb-2 mx-auto"
+                                                style={{ width: "40px", height: "40px", color: tool.color }}
+                                            />
                                             <h5 className="mb-0">{tool.name}</h5>
                                         </div>
                                     </div>
