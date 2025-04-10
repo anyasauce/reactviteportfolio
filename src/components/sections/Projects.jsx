@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import bootstrap from 'bootstrap/dist/js/bootstrap.bundle';
 import BoardingHouseImage from '../../assets/projects_images/boardinghouse.png';
 import CodeWebTechImage from '../../assets/projects_images/codewebtech.png';
 import ReservationImage from '../../assets/projects_images/reservation.png';
