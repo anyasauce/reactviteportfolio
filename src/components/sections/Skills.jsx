@@ -157,7 +157,7 @@ function Skills() {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row ">
                 <div className="col-12">
                     <div className="card border-0 bg-dark bg-opacity-25">
                         <div className="card-body">
