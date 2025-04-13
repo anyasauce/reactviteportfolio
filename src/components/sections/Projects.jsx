@@ -32,6 +32,7 @@ import CountDown from '../../assets/projects_images/countdown.png';
 import PhotoBooth from '../../assets/projects_images/photobooth.png';
 import Bday from '../../assets/projects_images/bday.png';
 import smsportal from '../../assets/projects_images/smsportal.png';
+import IdeaHub from '../../assets/projects_images/ideahub.png';
 
 function Projects() {
     const projects = [
@@ -58,6 +59,14 @@ function Projects() {
             image: TheDailyGrind,
             github: "#",
             demo: "#"
+        },
+        {
+            title: "CapstoneIdeaHub",
+            description: "A countdown timer that dynamically displays the time remaining until the New Year.",
+            technologies: ["HTML", "Bootstrap 5", "JavaScript", "CSS"],
+            image: IdeaHub,
+            github: "#",
+            demo: "https://capstoneideahub.vercel.app/"
         },
         {
             title: "Photo Booth",
