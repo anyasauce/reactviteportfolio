@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import ThemeToggler from './ThemeToggler';
+// import ThemeToggler from './ThemeToggler';
 import '../styles/Header.css';
 
 
@@ -54,10 +54,10 @@ function Header({ theme, toggleTheme }) {
                 >
                     <ul className="navbar-nav mx-auto">
                         {[
-                            { id: '/', label: 'Home', icon: 'bi-house' },
-                            { id: '/about', label: 'About', icon: 'bi-person' },
-                            { id: '/projects', label: 'Projects', icon: 'bi-briefcase' },
-                            { id: '/skills', label: 'Skills', icon: 'bi-star' },
+                            { id: '/', label: 'Home', icon: 'bi-house-fill' },
+                            { id: '/about', label: 'About', icon: 'bi-person-fill' },
+                            { id: '/projects', label: 'Projects', icon: 'bi-briefcase-fill' },
+                            { id: '/skills', label: 'Skills', icon: 'bi-star-fill' },
                         ].map(item => (
                             <li className="nav-item mx-1" key={item.id}>
                                 <NavLink
@@ -70,9 +70,9 @@ function Header({ theme, toggleTheme }) {
                         ))}
                     </ul>
 
-                    <div className="d-flex align-items-center">
+                    {/* <div className="d-flex align-items-center">
                         <ThemeToggler theme={theme} toggleTheme={toggleTheme} />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </nav>
