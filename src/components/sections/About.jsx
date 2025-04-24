@@ -39,7 +39,7 @@ function About() {
                             <h3 className="card-title mb-4">Education</h3>
                             <div className="mb-4">
                                 <h5 className="text-primary">Bachelor of Science in Information Technology</h5>
-                                <p className="text-muted mb-1">PHINMA University of Iloilo (2023 to Present)</p>
+                                <p className="text-muted mb-1">PHINMA University of Iloilo (2023 – 2027, Expected Graduation)</p>
                                 <p>Currently in my 2nd year of studies, focusing on web development.</p>
                             </div>
 
@@ -49,7 +49,7 @@ function About() {
                                     <div className="p-3 bg-opacity-50 rounded text-center">
                                         <i className="fa-solid fa-users fs-3 text-primary mb-2"></i>
                                         <h5 className="mb-1">Statisfied Clients</h5>
-                                        <p className="mb-0">5+</p>
+                                        <p className="mb-0">15+</p>
                                     </div>
                                 </div>
 
@@ -57,7 +57,7 @@ function About() {
                                     <div className="p-3 bg-opacity-50 rounded text-center">
                                         <i className="fa-solid fa-diagram-project fs-3 text-primary mb-2"></i>
                                         <h5 className="mb-1">Projects</h5>
-                                        <p className="mb-0">10+</p>
+                                        <p className="mb-0">20+</p>
                                     </div>
                                 </div>
 
