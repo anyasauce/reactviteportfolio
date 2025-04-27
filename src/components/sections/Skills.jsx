@@ -51,6 +51,11 @@ function Skills() {
             color: "#61DAFB"
         },
         {
+            name: "TypeScript",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+            color: "#3178C6"
+        },
+        {
             name: "API",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
             color: "#339933"
