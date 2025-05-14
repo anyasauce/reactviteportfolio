@@ -12,13 +12,11 @@ Welcome to my personal portfolio! This website showcases my skills, projects, an
 ## Technologies Used
 
 - **Frontend**:
-  - HTML, CSS, JavaScript, React, Bootstrap
+  - React.js + Vite, Bootstrap 5
 - **Backend**:
   - Node.js, Express.js
 - **Email Service**:
   - Nodemailer (for contact form functionality)
-- **Database**:
-  - (Add your DB here if applicable, like MongoDB or MySQL)
 - **Version Control**:
   - Git, GitHub
 
@@ -31,4 +29,20 @@ Welcome to my personal portfolio! This website showcases my skills, projects, an
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to check the **LICENSE** file for more details.
+This software is licensed under the **Developer License Agreement**. By using or purchasing this software, you agree to the following terms:
+
+### Developer License Agreement
+
+Copyright (c) 2025 Josiah Danielle Gallenero
+
+This software is licensed, not sold. By using or purchasing this software, you agree to the following terms:
+
+1. You are granted a non-exclusive, non-transferable license to use this software for your own business or personal use.
+2. You may NOT:
+   - Redistribute, resell, lease, or sublicense this software without written permission.
+   - Claim ownership or authorship of the software.
+   - Share the source code publicly or privately without consent.
+3. The original developer Josiah Danielle Gallenero retains all rights to the source code.
+4. Violation of these terms may result in termination of your license and legal action.
+
+For licensing inquiries or custom agreements, contact: josiahdanielle09gallenero@gmail.com

@@ -1,37 +1,4 @@
-# My Portfolio
-
-Welcome to my personal portfolio! This website showcases my skills, projects, and experience as a **full-stack web developer**. It features a range of dynamic web applications I have developed using modern technologies.
-
-## Features
-
-- **About Me**: Get to know my background, education, and what drives me as a developer.
-- **Projects**: Explore a selection of my projects, each showcasing different aspects of web development.
-- **Skills**: View the programming languages and frameworks I work with, including both frontend and backend technologies.
-- **Contact**: Reach out via an integrated form that sends emails using **Node.js**, **Express.js**, and **Nodemailer** for instant notifications.
-
-## Technologies Used
-
-- **Frontend**:
-  - React.js + Vite, Bootstrap 5
-- **Backend**:
-  - Node.js, Express.js
-- **Email Service**:
-  - Nodemailer (for contact form functionality)
-- **Version Control**:
-  - Git, GitHub
-
-## Features
-
-- **Responsive Design**: Built using **Bootstrap** to ensure a smooth experience on all devices.
-- **Contact Form**: Users can send messages directly via the form, which are then sent to my email using Nodemailer.
-- **SMS Notifications**: (If applicable) Notifications for important updates sent via SMS.
-- **Dynamic Content**: Showcase of various projects, each with detailed information about the technologies used.
-
-## License
-
-This software is licensed under the **Developer License Agreement**. By using or purchasing this software, you agree to the following terms:
-
-### Developer License Agreement
+Developer License Agreement
 
 Copyright (c) 2025 Josiah Danielle Gallenero
 
