@@ -62,8 +62,9 @@ function Home() {
                     <div className="mt-3">
                         <a href="https://www.buymeacoffee.com/josiahdanip">
                             <img
-                                src="https://img.buymeacoffee.com/button-api/?text=Support me on BuyMeCoffee&emoji=☕&slug=josiahdanip&button_colour=6c63ff&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"
-                                alt="Support me on BuyMeCoffee button"
+                            src="https://img.buymeacoffee.com/button-api/?text=Support me on BuyMeCoffee&emoji=☕&slug=josiahdanip&button_colour=6c63ff&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"
+                            alt="Support me on BuyMeCoffee button"
+                            title="Support me on BuyMeCoffee"
                             />
                         </a>
                     </div>
