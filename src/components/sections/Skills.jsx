@@ -28,23 +28,23 @@ function Skills() {
             color: "#777BB4"
         },
         {
-            name: "Python",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-            color: "#3776AB"
-        },
-        {
             name: "MySQL",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
             color: "#4479A1"
-        }
-    ];
-
-    const learningTechStack = [
+        },
         {
             name: "Laravel",
             icon: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
             color: "#FF2D20"
         },
+        {
+            name: "Tailwind CSS",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",  // Fixed typo in URL (plains -> plain)
+            color: "#06B6D4"
+        },
+    ];
+
+    const learningTechStack = [
         {
             name: "React",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
@@ -59,11 +59,6 @@ function Skills() {
             name: "API",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
             color: "#339933"
-        },
-        {
-            name: "Tailwind CSS",
-            icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",  // Fixed typo in URL (plains -> plain)
-            color: "#06B6D4"
         },
         {
             name: "MongoDB",
