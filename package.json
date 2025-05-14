@@ -12,14 +12,17 @@
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",
+    "@tailwindcss/vite": "^4.1.6",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "lucide-react": "^0.510.0",
     "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.4.1",
-    "reactviteportfolio": "file:"
+    "reactviteportfolio": "file:",
+    "tailwindcss": "^4.1.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

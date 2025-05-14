@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Home, User, GitBranch, Lightbulb } from 'lucide-react';
+// import ThemeToggler from './ThemeToggler';
 import '../styles/Header.css';
+
 
 function Header() {
     const location = useLocation();
@@ -24,18 +25,18 @@ function Header() {
     }, [location]);
 
     return (
-        <nav role="navigation" className="navbar navbar-expand-lg shadow sticky-top custom-navbar">
-            <div className="container py-2">
-                <NavLink className="navbar-brand d-flex align-items-center gap-2" to="/">
-                    <span className="brand-icon d-flex justify-content-center align-items-center rounded-circle border-2 border-indigo-600" style={{ width: '40px', height: '40px' }}>
-                        <i className="bi bi-terminal text-indigo-600" style={{ fontSize: '20px' }}></i>
+        <nav role="navigation" className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+            <div className="container">
+                <NavLink className="navbar-brand d-flex align-items-center" to="/">
+                    <span className="icon bg-primary bg-opacity-75 p-2 rounded me-2 d-flex align-items-center justify-content-center">
+                        <i className="bi bi-terminal text-white"></i>
                     </span>
-                    <span className="fw-bold fs-5" style={{ letterSpacing: '1.1px' }}>MyPortfolio</span>
+                    <span className="fw-bold">Portfolio</span>
                 </NavLink>
 
                 <button
                     ref={navbarTogglerRef}
-                    className="navbar-toggler"
+                    className="navbar-toggler border-0"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"
@@ -51,26 +52,27 @@ function Header() {
                     className="collapse navbar-collapse"
                     id="navbarNav"
                 >
-                    <ul className="navbar-nav ms-auto gap-lg-3 text-center">
-                        {[ 
-                            { id: '/', label: 'Home', icon: <Home /> },
-                            { id: '/about', label: 'About', icon: <User /> },
-                            { id: '/projects', label: 'Projects', icon: <GitBranch /> },
-                            { id: '/skills', label: 'Skills', icon: <Lightbulb /> },
+                    <ul className="navbar-nav mx-auto">
+                        {[
+                            { id: '/', label: 'Home', icon: 'bi-house-fill' },
+                            { id: '/about', label: 'About', icon: 'bi-person-fill' },
+                            { id: '/projects', label: 'Projects', icon: 'bi-briefcase-fill' },
+                            { id: '/skills', label: 'Skills', icon: 'bi-star-fill' },
                         ].map(item => (
-                            <li className="nav-item" key={item.id}>
+                            <li className="nav-item mx-1" key={item.id}>
                                 <NavLink
-                                    className={({ isActive }) =>
-                                        `nav-link nav-custom-link px-3 py-2 ${isActive ? 'active' : ''}`
-                                    }
+                                    className={({ isActive }) => `nav-link px-3 py-2 rounded-pill ${isActive ? 'active bg-primary bg-opacity-25' : 'text-light'}`}
                                     to={item.id}
                                 >
-                                    <span className="me-2">{item.icon}</span>
-                                    {item.label}
+                                    <i className={`bi ${item.icon} me-1`}></i> {item.label}
                                 </NavLink>
                             </li>
                         ))}
                     </ul>
+
+                    {/* <div className="d-flex align-items-center">
+                        <ThemeToggler theme={theme} toggleTheme={toggleTheme} />
+                    </div> */}
                 </div>
             </div>
         </nav>

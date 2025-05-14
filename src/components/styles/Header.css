@@ -1,18 +1,68 @@
-.navbar-collapse {
-    transition: height 0.4s ease !important;
+.custom-navbar {
+    background: rgba(20, 20, 20, 0.75);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.brand-icon {
+    background-color: #6610f2;
+    color: white;
+    padding: 0.6rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px rgba(102, 16, 242, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .brand-icon {
+    transform: scale(1.1);
+}
+
+.navbar-collapse,
 .collapsing {
     transition: height 0.4s ease !important;
 }
 
-.nav-link:not(.active):hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.nav-custom-link {
+    color: #ffffffb3;
+    position: relative;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
-.navbar-brand:hover .icon {
-    transform: scale(1.05);
+.nav-custom-link:hover {
+    color: #fff;
+}
+
+.nav-custom-link.active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #6610f2;
+    transform: translateX(-50%) scaleX(1);
+    transform-origin: center;
     transition: transform 0.3s ease;
+}
+
+.nav-custom-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #6610f2;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.nav-custom-link:hover::before {
+    transform: translateX(-50%) scaleX(1);
 }
 
 .navbar * {

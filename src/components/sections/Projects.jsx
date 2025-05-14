@@ -33,13 +33,23 @@ import PhotoBooth from '../../assets/projects_images/photobooth.png';
 import Bday from '../../assets/projects_images/bday.png';
 import smsportal from '../../assets/projects_images/smsportal.png';
 import IdeaHub from '../../assets/projects_images/ideahub.png';
+import Reyven from '../../assets/projects_images/reyven.png';
+import RFIDAttendance from '../../assets/projects_images/rfidattendance.png';
 
 function Projects() {
     const projects = [
         {
+            title: "RFID Attendance Monitoring System",
+            description: "A comprehensive RFID-based system designed to monitor student/office attendance efficiently, featuring real-time tracking, secure account management.",
+            technologies: ["Laravel", "Blade Template", "Tailwind CSS", "jQuery", "JavaScript"],
+            image: RFIDAttendance,
+            github: "#",
+            demo: ""
+        },
+        {
             title: "Student Portal with E-Wallet",
             description: "An all-in-one platform for students to manage their accounts, make secure e-wallet transactions, and track transactions availability in real-time.",
-            technologies: ["Laravel", "Tailwind CSS", "jQuery", "JavaScript"],
+            technologies: ["Laravel", "Blade Template", "Tailwind CSS", "jQuery", "JavaScript"],
             image: smsportal,
             github: "#",
             demo: ""
@@ -47,7 +57,7 @@ function Projects() {
         {
             title: "Boarding House Management System",
             description: "A system to manage tenants, payments, and room availability efficiently.",
-            technologies: ["Laravel", "Bootstrap 5", "jQuery", "JavaScript", "CSS"],
+            technologies: ["Laravel", "Blade Template", "Bootstrap 5", "jQuery", "JavaScript", "CSS"],
             image: BoardingHouseImage,
             github: "#",
             demo: "https://bhms.laravel.cloud/"
@@ -83,6 +93,14 @@ function Projects() {
             image: Bday,
             github: "#",
             demo: "https://kynes19th.vercel.app/"
+        },
+        {
+            title: "Website Portfolio",
+            description: "A website Portfolio from my Client",
+            technologies: ["HTML", "CSS"],
+            image: Reyven,
+            github: "#",
+            demo: "https://reyvenqqfff.github.io/reyvenlumanao/"
         },
         {
             title: "New Year Countdown",
