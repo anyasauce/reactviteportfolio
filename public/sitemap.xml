@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage URL -->
+  <url>
+    <loc>https://josiahh.vercel.app/</loc>
+    <lastmod>2025-05-14</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Page URL -->
+  <url>
+    <loc>https://josiahh.vercel.app/about</loc>
+    <lastmod>2025-05-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Projects Page URL -->
+  <url>
+    <loc>https://josiahh.vercel.app/projects</loc>
+    <lastmod>2025-05-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Skills Page URL -->
+  <url>
+    <loc>https://josiahh.vercel.app/skills</loc>
+    <lastmod>2025-05-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Page URL -->
+  <url>
+    <loc>https://josiahh.vercel.app/contact</loc>
+    <lastmod>2025-05-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
