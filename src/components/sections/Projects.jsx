@@ -34,7 +34,7 @@ import Bday from '../../assets/projects_images/bday.png';
 import smsportal from '../../assets/projects_images/smsportal.png';
 import IdeaHub from '../../assets/projects_images/ideahub.png';
 import Reyven from '../../assets/projects_images/reyven.png';
-import RFIDAttendance from '../../assets/projects_images/rfidattendance.png';
+import RFIDAttendance from '../../assets/projects_images/rfid2.png';
 
 function Projects() {
     const projects = [
