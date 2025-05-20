@@ -4,7 +4,7 @@ import '../styles/Home.css';
 
 function Home() {
     const [text, setText] = useState('');
-    const fullText = 'Full Stack Web Developer';
+    const fullText = 'Full Stack Web Developer based on Iloilo City, Philippines';
     const [index, setIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
 
