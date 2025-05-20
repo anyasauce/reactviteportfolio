@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
 const port = 5000;
+const axios = require('axios');
+require('dotenv').config();
 
 // Middleware
 app.use(cors());
@@ -38,4 +40,29 @@ app.post('/api/sendEmail', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
+});
+
+
+async function fetchWakaTimeStats() {
+  try {
+    const response = await axios.get(
+      'https://wakatime.com/api/v1/users/current/stats/last_year',
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.WAKATIME_API_KEY}`,
+        },
+      }
+    );
+
+    const total = response.data.data.human_readable_total;
+    return total;
+  } catch (error) {
+    console.error('Error fetching WakaTime stats:', error.response?.data || error.message);
+    return null;
+  }
+}
+
+// Example usage:
+fetchWakaTimeStats().then((total) => {
+  console.log(`Last year, you coded for: ${total}`);
 });
