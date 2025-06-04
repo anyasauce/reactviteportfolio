@@ -17,47 +17,35 @@ function Contact() {
         }));
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsLoading(true);
-        setStatus('');
+   const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setStatus('');
 
-        const API_URL = process.env.NODE_ENV === 'production'
-            ? 'https://josiahh.vercel.app/api/sendEmail'
-            : 'http://localhost:5000/api/sendEmail';
+    try {
+        const response = await fetch('/api/sendEmail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        });
 
-        try {
-            const response = await fetch(API_URL, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
+        const data = await response.json();
 
-            const responseText = await response.text();
-            console.log("Raw response:", responseText);
-
-            try {
-                const data = JSON.parse(responseText);
-                if (response.ok) {
-                    setStatus('Message sent successfully!');
-                    setFormData({ name: '', email: '', message: '' });
-                } else {
-                    setStatus(data.message || 'Failed to send message.');
-                }
-            } catch (jsonError) {
-                setStatus('Failed to send message, unexpected response format.');
-                console.error('Error parsing JSON:', jsonError);
-            }
-        } catch (error) {
-            console.error('Error in sending message:', error);
-            setStatus(`Failed to send message, please try again. Error: ${error.message}`);
-        } finally {
-            setIsLoading(false);
+        if (response.ok) {
+            setStatus('Message sent successfully!');
+            setFormData({ name: '', email: '', message: '' });
+        } else {
+            setStatus(data.message || 'Failed to send message.');
         }
-    };
-
+    } catch (error) {
+        console.error('Fetch error:', error);
+        setStatus(`Failed to send message. Error: ${error.message}`);
+    } finally {
+        setIsLoading(false);
+    }
+};
 
     return (
         <section className="contact-section container py-5" id="contact">
