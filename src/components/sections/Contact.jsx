@@ -17,35 +17,35 @@ function Contact() {
         }));
     };
 
-   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setStatus('');
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+        setStatus('');
 
-    try {
-        const response = await fetch('/api/sendEmail', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-        });
+        try {
+            const response = await fetch('/api/sendEmail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
 
-        const data = await response.json();
+            const data = await response.json();
 
-        if (response.ok) {
-            setStatus('Message sent successfully!');
-            setFormData({ name: '', email: '', message: '' });
-        } else {
-            setStatus(data.message || 'Failed to send message.');
+            if (response.ok) {
+                setStatus('Message sent successfully!');
+                setFormData({ name: '', email: '', message: '' });
+            } else {
+                setStatus(data.message || 'Failed to send message.');
+            }
+        } catch (error) {
+            console.error('Fetch error:', error);
+            setStatus(`Failed to send message. Error: ${error.message}`);
+        } finally {
+            setIsLoading(false);
         }
-    } catch (error) {
-        console.error('Fetch error:', error);
-        setStatus(`Failed to send message. Error: ${error.message}`);
-    } finally {
-        setIsLoading(false);
-    }
-};
+    };
 
     return (
         <section className="contact-section container py-5" id="contact">

@@ -3,6 +3,26 @@ import photo from '../../assets/picture.jpg';
 import wakatimeImg from '../../assets/wakatime/2024-2025.png';
 
 function About() {
+    const startYear = 2023;
+    
+    function getCurrentYearLevel(startYear){
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const currentMonth = today.getMonth() + 1;
+        
+        let yearLevel = currentYear - startYear + 1;
+
+        if(currentMonth < 6){
+            yearLevel -= 1;
+        }
+
+        if(yearLevel >= 5) return "Graduated";
+        if(yearLevel < 1) return "Not yet Started";
+
+        const suffix = yearLevel === 1 ? 'st' : yearLevel === 2 ? 'nd' : yearLevel === 3 ? 'rd' : 'th';
+        return `${yearLevel}${suffix} year`;
+    }
+
     const wakaTime = [
         {
             image: wakatimeImg,
@@ -24,15 +44,19 @@ function About() {
         degree: 'Bachelor of Science in Information Technology',
         school: 'PHINMA University of Iloilo',
         year: '2023 – 2027, Expected Graduation',
-        desc: 'Currently in my 2nd year of studies, focusing on web development.'
+        desc:
+        getCurrentYearLevel(startYear) === 'Graduated'
+            ? 'I have already graduated with a focus on web development.'
+            : `Currently in my ${getCurrentYearLevel(startYear)} of studies, focusing on web development.`
     };
+
 
     const freelanceStats = [
         { icon: 'fa-solid fa-users', title: 'Satisfied Clients', value: '15+' },
         { icon: 'fa-solid fa-diagram-project', title: 'Projects', value: '20+' },
         { icon: 'fa-solid fa-calendar-check', title: 'Freelance Since', value: '2024', large: true }
     ];
-
+    
     return (
         <section className="py-5">
             <h2 className="section-title">About Me</h2>
@@ -59,7 +83,11 @@ function About() {
                             </div>
                             <h3 className="card-title mb-4">Who I Am</h3>
                             <p>Hi, I'm Josiah Danielle Gallenero, a Full Stack Web Developer based in Iloilo City, Philippines with a passion for creating both static and dynamic websites. My skills range from frontend design to backend development, and I'm always eager to learn new technologies.</p>
-                            <p>I am currently a 2nd year college student at PHINMA University of Iloilo, pursuing my degree in Information Technology. In my free time, I work on personal projects and freelance gigs to expand my portfolio and experience.</p>
+                            <p>
+                            {getCurrentYearLevel(startYear) === 'Graduated'
+                                ? 'I have graduated from PHINMA University of Iloilo with a degree in Information Technology.'
+                                : `I am currently a ${getCurrentYearLevel(startYear)} college student at PHINMA University of Iloilo, pursuing my degree in Information Technology. In my free time, I work on personal projects and freelance gigs to expand my portfolio and experience.`}
+                            </p>
                         </div>
                     </div>
                 </div>
