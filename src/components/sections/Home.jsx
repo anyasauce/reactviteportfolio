@@ -42,7 +42,7 @@ function Home() {
             <div className="row align-items-center">
                 <div className="col-12 col-lg-6 mb-4">
                     <h1 className="display-5 fw-bold mb-3">
-                        Hi! My name is <span className="text-primary">Josiah Danielle Gallenero</span>
+                        Hi! I'am <span className="text-primary">Josiah Danielle Gallenero</span>
                     </h1>
                     <h2 className="h4 mb-3">
                         I'm a <span className="typing-text text-primary">{text}</span>
