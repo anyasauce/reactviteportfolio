@@ -71,7 +71,7 @@ function Skills() {
             color: "#68A063"
         },
         {
-            name: "Express",
+            name: "Express.js",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
             color: "#000000"
         }
@@ -102,7 +102,40 @@ function Skills() {
             name: "Canva",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg",
             color: "#00C4CC"
+        },
+        {
+            "name": "Postman",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+            "color": "#FF6C37"
+        },
+        {
+            "name": "Render",
+            "icon": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/render.svg",
+            "color": "#46E3B7"
+        },
+        {
+            "name": "Docker",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+            "color": "#2496ED"
         }
+    ];
+    
+    const integration = [
+        {
+            name: "Email Integration",
+            icon: "https://www.svgrepo.com/show/477054/email-download.svg",
+            color: "#007ACC"
+        },
+        {
+            name: "SMS Integration",
+            icon: "https://www.svgrepo.com/show/474993/sms.svg",
+            color: "#007ACC"
+        },
+        {
+            name: "Payment Integration",
+            icon: "https://www.svgrepo.com/show/301697/payment-security-bank.svg",
+            color: "#007ACC"
+        },
     ];
 
     return (
@@ -148,6 +181,31 @@ function Skills() {
                                                 style={{ width: "24px", height: "24px", color: skill.color }}
                                             />
                                             <span>{skill.name}</span>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='row mb-5'>
+                <div className="col-md-12">
+                    <div className="card border-0 bg-dark bg-opacity-25 h-100">
+                        <div className="card-body">
+                            <h3 className="mb-4">API Integration</h3>
+                            <div className="row g-3">
+                                {integration.map((integration, index) => (
+                                    <div className="col-md-4" key={index}>
+                                        <div className="skill-item rounded d-flex align-items-center p-3 hover:bg-dark hover:bg-opacity-50 transition-colors">
+                                            <img
+                                                src={integration.icon}
+                                                alt={integration.name}
+                                                className="me-3"
+                                                style={{ width: "24px", height: "24px", color: integration.color }}
+                                            />
+                                            <span>{integration.name}</span>
                                         </div>
                                     </div>
                                 ))}
