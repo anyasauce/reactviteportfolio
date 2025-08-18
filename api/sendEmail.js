@@ -9,12 +9,11 @@ export default async function handler(req, res) {
 
     const { name, email, message } = req.body;
 
-    // HARD-CODED Gmail credentials (for now)
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
             user: 'josiahdanielle09gallenero@gmail.com',
-            pass: 'lbyxbkvctgowkood', // make sure this is an app password
+            pass: 'lbyxbkvctgowkood',
         },
     });
 

@@ -29,13 +29,29 @@ function Footer() {
         }
     ];
 
+    const techStack = [
+        { name: "React.js", icon: "fab fa-react", color: "text-cyan-400" },
+        { name: "Bootstrap 5", icon: "fab fa-bootstrap", color: "text-purple-500" },
+    ];
+
     return (
         <footer className="footer mt-auto py-6 bg-dark bg-opacity-95 border-top border-secondary border-opacity-25">
             <div className="container">
                 <div className="row g-4 align-items-center">
+                    
                     <div className="col-md-4 text-center text-md-start">
-                        <h5 className="mb-3 text-primary font-bold text-lg">Josiah Danielle Gallenero</h5>
-                        <p className="text-muted mb-0 small">Full Stack Web Developer</p>
+                        <h5 className="mb-2 text-primary font-bold text-lg">Josiah Danielle Gallenero</h5>
+                        <p className="text-muted mb-2 small">Full Stack Web Developer</p>
+                        
+                        <p className="text-muted small mb-1">Tech Stack Used:</p>
+                        <div className="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+                            {techStack.map((tech, index) => (
+                                <div key={index} className="d-flex align-items-center gap-2">
+                                    <i className={`${tech.icon} ${tech.color} fs-5`}></i>
+                                    <span className="text-light small">{tech.name}</span>
+                                </div>
+                            ))}
+                        </div>
                     </div>
 
                     <div className="col-md-4 text-center">

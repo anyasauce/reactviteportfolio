@@ -46,7 +46,7 @@ function Skills() {
 
     const learningTechStack = [
         {
-            name: "React",
+            name: "React.js",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
             color: "#61DAFB"
         },
@@ -74,6 +74,16 @@ function Skills() {
             name: "Express.js",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
             color: "#000000"
+        },
+        {
+            name: "Supabase",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+            color: "#3ECF8E"
+        },
+        {
+            name: "PostgreSQL",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+            color: "#336791"
         }
     ];
 
