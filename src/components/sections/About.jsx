@@ -65,69 +65,68 @@ function About() {
                 <div className="col-md-6">
                     <div className="card border-0 bg-dark bg-opacity-25 h-100">
                         <div className="card-body">
-                           <div className="text-center mb-4">
-  <>
-    <style>
-      {`
-        @keyframes rotateArc {
-          0% { transform: rotate(0deg); opacity: 1; }
-          80% { opacity: 1; }
-          100% { transform: rotate(360deg); opacity: 0; }
-        }
-      `}
-    </style>
+                            <div className="text-center mb-4">
+                            <>
+                                <style>
+                                {`
+                                    @keyframes rotateArc {
+                                    0% { transform: rotate(0deg); opacity: 1; }
+                                    80% { opacity: 1; }
+                                    100% { transform: rotate(360deg); opacity: 0; }
+                                    }
+                                `}
+                                </style>
 
-    <div
-      style={{
-        position: "relative",
-        width: "270px",
-        height: "270px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        margin: "0 auto",
-      }}
-    >
-      {/* Rotating shooting star effect */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          borderRadius: "50%",
-          background:
-            "conic-gradient(#6c63ff 0deg 30deg, transparent 30deg 360deg)", // short arc
-          animation: "rotateArc 2s linear infinite",
-          zIndex: 1,
-        }}
-      ></div>
+                                <div
+                                style={{
+                                    position: "relative",
+                                    width: "270px",
+                                    height: "270px",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    margin: "0 auto",
+                                }}
+                                >
+                                {/* Rotating shooting star effect */}
+                                <div
+                                    style={{
+                                    position: "absolute",
+                                    inset: 0,
+                                    borderRadius: "50%",
+                                    background:
+                                        "conic-gradient(#6c63ff 0deg 30deg, transparent 30deg 360deg)", // short arc
+                                    animation: "rotateArc 2s linear infinite",
+                                    zIndex: 1,
+                                    }}
+                                ></div>
 
-      {/* Inner circle mask */}
-      <div
-        style={{
-          position: "absolute",
-          inset: "10px",
-          borderRadius: "50%",
-          background: "#000", // page background
-          zIndex: 2,
-        }}
-      ></div>
+                                {/* Inner circle mask */}
+                                <div
+                                    style={{
+                                    position: "absolute",
+                                    inset: "10px",
+                                    borderRadius: "50%",
+                                    background: "#000", // page background
+                                    zIndex: 2,
+                                    }}
+                                ></div>
 
-      {/* Centered image */}
-      <img
-        src={photo}
-        alt="Josiah Danielle Gallenero"
-        style={{
-          width: "250px",
-          height: "250px",
-          borderRadius: "50%",
-          objectFit: "cover",
-          zIndex: 3,
-        }}
-      />
-    </div>
-  </>
-</div>
-
+                                {/* Centered image */}
+                                <img
+                                    src={photo}
+                                    alt="Josiah Danielle Gallenero"
+                                    style={{
+                                    width: "250px",
+                                    height: "250px",
+                                    borderRadius: "50%",
+                                    objectFit: "cover",
+                                    zIndex: 3,
+                                    }}
+                                />
+                                </div>
+                            </>
+                            </div>
 
                             <h3 className="card-title mb-4">Who I Am</h3>
                             <p>Hi, I'm Josiah Danielle Gallenero, a Full Stack Web Developer based in Iloilo City, Philippines with a passion for creating both static and dynamic websites. My skills range from frontend design to backend development, and I'm always eager to learn new technologies.</p>
@@ -184,11 +183,11 @@ function About() {
                                     />
                                 ))}
 
-                                <p className="mb-0">
-                                    Last year, I coded for <strong>584 hrs 35 mins</strong> using WakaTime!
-                                </p>
+                                {/* <p className="mb-0">
+                                    Last year, I coded for <strong>912 hrs 4 mins</strong> using WakaTime!
+                                </p> */}
                                 <p className="mb-0 mt-2">
-                                    Since July 9, 2024, I've coded for a total of <strong>797 hrs 47 mins</strong>.
+                                    Since July 9, 2024, I've coded for a total of <strong>1,064 hrs 35 mins</strong>.
                                 </p>
                                 <p className="text-muted">Data from 2024-2025</p>
                             </div>
