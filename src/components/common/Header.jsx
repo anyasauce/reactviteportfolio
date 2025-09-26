@@ -55,6 +55,7 @@ function Header() {
                         {[ 
                             { id: '/', label: 'Home', icon: <Home /> },
                             { id: '/about', label: 'About', icon: <User /> },
+                            { id: '/experience', label: 'Experience', icon: <GitBranch /> },
                             { id: '/projects', label: 'Projects', icon: <GitBranch /> },
                             { id: '/skills', label: 'Skills', icon: <Lightbulb /> },
                         ].map(item => (

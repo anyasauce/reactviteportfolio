@@ -51,29 +51,34 @@ function Skills() {
             color: "#61DAFB"
         },
         {
+            name: "Next.js",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+            color: "#000000"
+        },
+        {
             name: "TypeScript",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
             color: "#3178C6"
         },
         {
-            name: "API",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-            color: "#339933"
-        },
-        {
-            name: "MongoDB",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-            color: "#47A248"
-        },
-        {
             name: "Node.js",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-            color: "#68A063"
+            color: "#339933"
         },
         {
             name: "Express.js",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
             color: "#000000"
+        },
+        {
+            name: "Resful API",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+            color: "#68A063"
+        },
+        {
+            name: "MongoDB",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+            color: "#47A248"
         },
         {
             name: "Supabase",
@@ -84,7 +89,12 @@ function Skills() {
             name: "PostgreSQL",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
             color: "#336791"
-        }
+        },
+        {
+            name: "ShadCN/UI",
+            icon: "https://ui.shadcn.com/favicon.ico",
+            color: "#7C3AED"
+        },
     ];
 
     const tools = [
@@ -146,7 +156,53 @@ function Skills() {
             icon: "https://www.svgrepo.com/show/301697/payment-security-bank.svg",
             color: "#007ACC"
         },
+        {
+            name: "Maps Integration",
+            icon: "https://www.svgrepo.com/show/469229/maps.svg",
+            color: "#34A853"
+        },
+        {
+            name: "Authentication / OAuth",
+            icon: "https://www.svgrepo.com/show/530163/verified.svg",
+            color: "#F9AB00"
+        },
+        {
+            name: "Google Services",
+            icon: "https://www.svgrepo.com/show/475656/google-color.svg",
+            color: "#4285F4"
+        },
+        {
+            name: "Geolocation",
+            icon: "https://www.svgrepo.com/show/476876/geo-fence.svg",
+            color: "#FF6D00"
+        },
+        {
+            name: "Geofencing",
+            icon: "https://www.svgrepo.com/show/476876/geo-fence.svg",
+            color: "#FF5722"
+        },
+        {
+            name: "Push Notifications",
+            icon: "https://www.svgrepo.com/show/354137/onesignal.svg",
+            color: "#8E24AA"
+        },
+        {
+            name: "Analytics Integration",
+            icon: "https://www.svgrepo.com/show/454708/analytics-chart-earning.svg",
+            color: "#00BCD4"
+        },
+        {
+            name: "Chat / Messaging",
+            icon: "https://www.svgrepo.com/show/530377/chat-chat.svg",
+            color: "#1976D2"
+        },
+        {
+        name: "Cloud Storage",
+        icon: "https://www.svgrepo.com/show/475288/cloud-storage.svg",
+        color: "#039BE5"
+    },
     ];
+
 
     return (
         <section className="py-5">
