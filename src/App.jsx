@@ -10,6 +10,7 @@ import Contact from './components/sections/Contact';
 import Chatbot from './components/features/Chatbot';
 import NotFound from './components/NotFound';
 import Experience from './components/sections/Experience';
+import TermsPolicy from './components/sections/TermsPolicy';
 function App() {
   const [theme, setTheme] = useState('dark');
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/termspolicy" element={<TermsPolicy />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

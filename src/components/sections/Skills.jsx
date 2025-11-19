@@ -39,7 +39,7 @@ function Skills() {
         },
         {
             name: "Tailwind CSS",
-            icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",  // Fixed typo in URL (plains -> plain)
+            icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
             color: "#06B6D4"
         },
     ];
@@ -124,19 +124,19 @@ function Skills() {
             color: "#00C4CC"
         },
         {
-            "name": "Postman",
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
-            "color": "#FF6C37"
+            name: "Postman",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+            color: "#FF6C37"
         },
         {
-            "name": "Render",
-            "icon": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/render.svg",
-            "color": "#46E3B7"
+            name: "Render",
+            icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/render.svg",
+            color: "#46E3B7"
         },
         {
-            "name": "Docker",
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-            "color": "#2496ED"
+            name: "Docker",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+            color: "#2496ED"
         }
     ];
     
@@ -197,12 +197,107 @@ function Skills() {
             color: "#1976D2"
         },
         {
-        name: "Cloud Storage",
-        icon: "https://www.svgrepo.com/show/475288/cloud-storage.svg",
-        color: "#039BE5"
-    },
+            name: "Cloud Storage",
+            icon: "https://www.svgrepo.com/show/475288/cloud-storage.svg",
+            color: "#039BE5"
+        },
     ];
 
+    const mobileAppDevelopment = [
+        {
+            name: "React Native",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+            color: "#61DAFB"
+        },
+        {
+            name: "NativeWind",
+            icon: "https://www.svgrepo.com/show/374146/typescript-official.svg",
+            color: "#06B6D4"
+        },
+        {
+            name: "Laravel Backend",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
+            color: "#FF2D20"
+        },
+        {
+            name: "Express.js Backend",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+            color: "#000000"
+        },
+        {
+            name: "Expo",
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAXVBMVEVHcEwLDhMKDhMLDxMKDhMKDhQHDw8LDw8LDhIKDhIKDxIMDxMKDhMLDhMPDw8JDRELDhMKDhIKDxULDhIJDA8KDRIMDhMKDhILDxMLDxIKDhILDxEJDRMHCxMLDxRJ+fFnAAAAH3RSTlMAn+//j38gQM+/YFDf3xCAoO8w31BfkN9AcK+AgEBwIYLNDwAAAMVJREFUeAGt0MsWQzAUheHNIe1BkWpLr+//mLVErE1i1H5Dg33kx58lqUiaYVcukww7jMwOiDvKTBFVyKJETCWLUx39Q9IgYCohaTjRykq290RrxTnHBzpjbPSpF3GuQEm1gicmGN0iE4U/gFHd+zUe4E9DUCunA/THDTXyB5zarmu1wc27n+BGDxB1E4YHDMicK6GBJxhevpYf6MCWGAq8ZTJgY/ATygmYK67gBMzHgG4SbGLodEsRpe7xRc8HmOntB7/7AmhdCQtgyt3wAAAAAElFTkSuQmCC",
+            color: "#000020"
+        },
+        {
+            name: "React Navigation",
+            icon: "https://reactnavigation.org/img/spiro.svg",
+            color: "#6B46C1"
+        }
+    ];
+
+    const webHosting = [
+        {
+            name: "GitHub Pages",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+            color: "#181717"
+        },
+        {
+            name: "Vercel",
+            icon: "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png",
+            color: "#000000"
+        },
+        {
+            name: "Render",
+            icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/render.svg",
+            color: "#46E3B7"
+        },
+        {
+            name: "Docker",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+            color: "#2496ED"
+        },
+        {
+            name: "Nginx",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+            color: "#009639"
+        },
+        {
+            name: "Ngrok",
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAARVBMVEUCI48AAIUAGYwAFIv////29/wAAIJUYKfn6fJ6grcNKZGyttTv8PZmb67BxNyssdC0udbd3+z4+PsABYni5O8AH44cM5WwOgziAAAAVklEQVR4Ad2JhRHAMAzEGqYy7T9qw7xAKtOfNQ0JMEwQGFDtsIZQZg4XoCcldijQkTP2LLCRiRW0clNK7SYcrTzpdYHJpLsj9et5fyFJK701mPD4NB4f07AF1Bwc3XUAAAAASUVORK5CYII=",
+            color: "#1F1E37"
+        },
+        {
+            name: "Hostinger",
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADQ0lEQVRYhe3XX4hVVRTH8c++o/gHs0joobAwil56aA6BhIgknKtSDwVSRhDWU1HnWkQQRBERhEZIcwyiqLEgsgkSQUzvfYigt+CM4EshPmhBBQb2zwqdWT2cmXFmmvHe8dpD0Q82l8tZe+8va6+119oJdjRHF49H7MK32Ft2sh/1oSKvbsHL+EBypGxnv89n24AkBW7ATowUebW11Rxd0QdDA+vxnjBc5NXGIh9dMi/ANA1gI96PiA+LvNrcao4u7QNkJe7HJ8TeIq/unA0yG2BSy3A3RiJiuMirO1qbR1MfIFdiG/YTw0Vere0GMKkrJibuNK6fI5kO8gCe3pFXA70ATGrpAmx70SKkhQD8Y/ofYCEAsQDbMziG8W6Gi3pccGVEbCjy6jd18MRkTs6iGsNXZSf7rsirB7Edj2JNvwA3Y2T6fvO4I3CsyKs3EgeGOtmuIq8OolCn81WzJ/R6BA11Ki7rMpZjLd4OPi7y6q7ECSkV2IpP1ccydan16oGFagmaWBccElFK6XPiS2EbVscExARABH7ANzh/GUGS2iNrRHxEGi47g2+1mtXyyX2mXNHKq1VqF45bWMT3ogZScLrszCzNMwpMseVoMjZ+nbBKHdHTYWLaoM6EiMn/6cL3hJCCCDFjfpoYZ8tOdnoKYMemoykiBobag+eLZnWr8AS2YMUEyIyN+/gNdck/1Egef72djdUxEDEQEa0ir44Lh/EUjqCFdVg8l1/70DViejGqGddjH97ETWUn24978RgqPdxql6Lp90Cog/ARHCzy6jksKzvZO6luTp7F1/i1h3FWj4G8iFmRWOt6vIR7irzaLTlQtrNXi7wawbVd1hzHjdiDq3sCqG/3v31r4Ha8G2Fva9Pok0NHBk/iZLdFi7z6Cee62U1uYk4fXNASZMKcXe086rl//Ff1A/9hgFSH4JnLuO6f+LlngN3t28bwIl7ACX0Wo5TSSfV9sg+/dAWAspOdUj8ot+AVnLpUgKH24FjZyb6QPIz7cBBzPlBnxEDZyaLsZMcbKT0/AfIavr9UkLKd/VF2ssOpfg09hM/UxW0qTS+ar0VzdEDEWmxIKe0Zag9e1J3dVNQ9x3asTjwz1MnO/QXuPSVk6ZNl+gAAAABJRU5ErkJggg==",
+            color: "#673DE6"
+        },
+        {
+            name: "AWS",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+            color: "#FF9900"
+        },
+        {
+            name: "Netlify",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg",
+            color: "#00C7B7"
+        },
+        {
+            name: "Heroku",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg",
+            color: "#430098"
+        },
+        {
+            name: "DigitalOcean",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg",
+            color: "#0080FF"
+        },
+        {
+            name: "Firebase Hosting",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+            color: "#FFCA28"
+        }
+    ];
 
     return (
         <section className="py-5">
@@ -281,7 +376,55 @@ function Skills() {
                 </div>
             </div>
 
-            <div className="row ">
+            <div className="row mb-5">
+                <div className="col-md-6 mb-4 mb-md-0">
+                    <div className="card border-0 bg-dark bg-opacity-25 h-100">
+                        <div className="card-body">
+                            <h3 className="mb-4">Mobile Application Development</h3>
+                            <div className="row g-3">
+                                {mobileAppDevelopment.map((skill, index) => (
+                                    <div className="col-md-6" key={index}>
+                                        <div className="skill-item rounded d-flex align-items-center p-3 hover:bg-dark hover:bg-opacity-50 transition-colors">
+                                            <img
+                                                src={skill.icon}
+                                                alt={skill.name}
+                                                className="me-3"
+                                                style={{ width: "24px", height: "24px", color: skill.color }}
+                                            />
+                                            <span>{skill.name}</span>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-md-6">
+                    <div className="card border-0 bg-dark bg-opacity-25 h-100">
+                        <div className="card-body">
+                            <h3 className="mb-4">Web Hosting Services</h3>
+                            <div className="row g-3">
+                                {webHosting.map((hosting, index) => (
+                                    <div className="col-md-6" key={index}>
+                                        <div className="skill-item rounded d-flex align-items-center p-3 hover:bg-dark hover:bg-opacity-50 transition-colors">
+                                            <img
+                                                src={hosting.icon}
+                                                alt={hosting.name}
+                                                className="me-3"
+                                                style={{ width: "24px", height: "24px", color: hosting.color }}
+                                            />
+                                            <span>{hosting.name}</span>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="row">
                 <div className="col-12">
                     <div className="card border-0 bg-dark bg-opacity-25">
                         <div className="card-body">
