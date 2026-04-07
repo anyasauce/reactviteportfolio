@@ -35,9 +35,45 @@ import smsportal from '../../assets/projects_images/smsportal.png';
 import IdeaHub from '../../assets/projects_images/ideahub.png';
 import Reyven from '../../assets/projects_images/reyven.png';
 import RFIDAttendance from '../../assets/projects_images/rfid2.png';
+import Donezo from '../../assets/projects_images/donezo.webp';
+import Nexus from '../../assets/projects_images/nexus.webp';
+import FlexSpace from '../../assets/projects_images/flexspace.png';
+import SchoolClearance from '../../assets/projects_images/asc.png';
 
 function Projects() {
     const projects = [
+        {
+            title: "Nexus POS & Inventory",
+            description: "A high-performance point-of-sale solution featuring real-time stock synchronization, multi-branch inventory tracking, and comprehensive sales analytics with secure transaction logging.",
+            technologies: ["Laravel 12", "React", "Inertia.js", "Tailwind CSS", "MySQL"],
+            image: Nexus, // Ensure you have this imported
+            github: "#",
+            demo: ""
+        },
+        {
+            title: "Donezo Piggery Management",
+            description: "An advanced agricultural ERP designed to track livestock growth metrics (ADG), cage logistics, and medical records, featuring role-based permissions and automated inventory management.",
+            technologies: ["Laravel 12", "React", "Tailwind CSS", "Inertia.js", "MySQL"],
+            image: Donezo, // Ensure you have this imported
+            github: "#",
+            demo: ""
+        },
+        {
+            title: "FlexSpace Iloilo",
+            description: "A specialized workspace discovery platform for Iloilo City, enabling students and professionals to find co-working hubs via live GPS tracking, real-time availability, and category-based filtering.",
+            technologies: ["MongoDB", "Express.js", "React", "Node.js", "Leaflet.js", "Tailwind CSS"],
+            image: FlexSpace, // Ensure this matches your import name
+            github: "#",
+            demo: "https://flexspace-iloilo.vercel.app/"
+        },
+        {
+            title: "Automated School Clearance",
+            description: "A centralized institutional platform designed to digitize the student clearance process, featuring multi-level department approvals, real-time status tracking, and automated record synchronization.",
+            technologies: ["Laravel 12", "React", "TypeScript", "Inertia.js", "MySQL", "Tailwind CSS"],
+            image: SchoolClearance, // Ensure this matches your import
+            github: "#",
+            demo: ""
+        },
         {
             title: "RFID Attendance Monitoring System",
             description: "A comprehensive RFID-based system designed to monitor student/office attendance efficiently, featuring real-time tracking, secure account management.",
