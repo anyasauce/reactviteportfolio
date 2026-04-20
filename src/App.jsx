@@ -12,6 +12,10 @@ import NotFound from './components/NotFound';
 import Experience from './components/sections/Experience';
 import TermsPolicy from './components/sections/TermsPolicy';
 
+const Analytics = process.env.NODE_ENV === 'production' 
+  ? require('@vercel/analytics/react').Analytics 
+  : () => null;
+
 function App() {
   const [theme, setTheme] = useState('dark');
 
@@ -39,6 +43,7 @@ function App() {
         </main>
         <Footer />
         <Chatbot />
+        <Analytics />
       </div>
     </Router>
   );

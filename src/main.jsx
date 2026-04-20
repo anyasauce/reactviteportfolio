@@ -3,13 +3,8 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
-const Analytics = import.meta.env.PROD
-  ? require('@vercel/analytics/react').Analytics
-  : () => null;
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-    <Analytics />
   </React.StrictMode>,
 )
