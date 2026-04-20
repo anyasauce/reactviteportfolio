@@ -11,6 +11,7 @@ import Chatbot from './components/features/Chatbot';
 import NotFound from './components/NotFound';
 import Experience from './components/sections/Experience';
 import TermsPolicy from './components/sections/TermsPolicy';
+
 function App() {
   const [theme, setTheme] = useState('dark');
 
