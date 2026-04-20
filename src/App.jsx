@@ -12,8 +12,8 @@ import NotFound from './components/NotFound';
 import Experience from './components/sections/Experience';
 import TermsPolicy from './components/sections/TermsPolicy';
 
-const Analytics = process.env.NODE_ENV === 'production' 
-  ? require('@vercel/analytics/react').Analytics 
+const Analytics = import.meta.env.PROD 
+  ? lazy(() => import('@vercel/analytics/react').then(mod => ({ default: mod.Analytics })))
   : () => null;
 
 function App() {
@@ -43,7 +43,11 @@ function App() {
         </main>
         <Footer />
         <Chatbot />
-        <Analytics />
+        {import.meta.env.PROD && (
+          <Suspense fallback={null}>
+            <Analytics />
+          </Suspense>
+        )}
       </div>
     </Router>
   );
