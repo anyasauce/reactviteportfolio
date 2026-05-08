@@ -49,7 +49,7 @@ function App() {
               </Routes>
             </main>
             
-            {/* Sidebar ads - only show on certain pages */}
+            {/* Sidebar ads - only show on certain pages
             <aside className="col-lg-3 d-none d-lg-block">
               <div className="sticky-top pt-4" style={{ top: '20px' }}>
                 <GoogleAds />
@@ -60,7 +60,7 @@ function App() {
                   Advertisement
                 </p>
               </div>
-            </aside>
+            </aside> */}
           </div>
         </div>
         
