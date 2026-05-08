@@ -39,6 +39,7 @@ import Donezo from '../../assets/projects_images/donezo.webp';
 import Nexus from '../../assets/projects_images/nexus.webp';
 import FlexSpace from '../../assets/projects_images/flexspace.png';
 import SchoolClearance from '../../assets/projects_images/asc.png';
+import GoogleAds from '../ads/GoogleAds';
 
 function Projects() {
     const projects = [
@@ -437,6 +438,8 @@ function Projects() {
                     </div>
                 ))}
             </div>
+
+            <GoogleAds />
 
             <div className="modal fade" id="imageModal" tabIndex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-xl">
